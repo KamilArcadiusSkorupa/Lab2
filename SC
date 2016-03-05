@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+int a = 10, b = 2, c = 3;
+
+if (b > a && b < c)
+    cout << "b is in the middle";
+    cout << endl;
+
+
+if ((a+b)/2 < c)
+    cout << "c is greater than the average (a,b)";
+    cout << endl;
+
+
+if (a < b && b < c)
+    cout << "Order is a, b, c";
+
+if (a < c && c < b)
+    cout << "Order is a, c, b";
+
+if (b < a && a < c)
+    cout << "Order is b, a, c";
+
+if (b < c && c < a)
+    cout << "Order is b, c, a";
+
+if (c < a && a < b)
+    cout << "Order is c, a, b";
+
+if (c < b && b < a)
+    cout << "Order is c, b, a";
+
+return 0;
+
+}
+
+// if b is between a and c, print "b is in the middle."
+// if c is greater than the average (a,b) print that, c is greater
+// print sorted order of a,b,c.
+
+//if ((a > b) && (a > c) && (b > c))
